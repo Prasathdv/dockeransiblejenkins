@@ -14,7 +14,7 @@
       - name: Start the container
         docker_container:
           name: javabuildwar
-          image: "prasathdvdevops/javabuildwar:${DOCKER_TAG}"
+          image: "prasathdvdevops/javabuildwar:{{DOCKER_TAG}}"
           state: started
           published_ports:
             - 0.0.0.0:8080:8080
